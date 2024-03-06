@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student management system</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Student portal</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <input type="text" name="search" placeholder="Search" id="search1" />
+          <button class="btn" id="searchBtn">Search</button>
+        </div>
+        <div class="row">
+          <button class="btn" id="1" onclick="handleSort(1)">
+            Sort A&rarr;Z
+          </button>
+          <button class="btn" id="2" onclick="handleSort(2)">
+            Sort Z&rarr;A
+          </button>
+          <button class="btn" id="3" onclick="handleSort(3)">
+            Sort By Marks
+          </button>
+          <button class="btn" id="4" onclick="handleSort(4)">
+            Sort By Passing
+          </button>
+          <button class="btn" id="5" onclick="handleSort(5)">
+            Sort By Class
+          </button>
+          <button class="btn" id="6" onclick="handleSort(6)">
+            Sort By Gender
+          </button>
+        </div>
+        <div class="row1" id="table"></div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
